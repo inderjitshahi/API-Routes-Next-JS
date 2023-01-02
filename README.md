@@ -1,10 +1,10 @@
-# ISBlog built with Next JS 12+, TailwindCSS, Firebase, and Draft JS [![LinkedIn](/public/images/linkedin.png)](https://www.linkedin.com/in/inderjit-shahi-b9880a201/)
+# API built with Next JS 12+, TailwindCSS, MongoDB, and React JS [![LinkedIn](/public/images/linkedin.png)](https://www.linkedin.com/in/inderjit-shahi-b9880a201/)
 
 <p align="center">
   <a href="https://api-routes-next-js-sepia.vercel.app/"><img src="public/images/ISDocBanner.png" alt="Website banner"></a>
 </p>
 
-🚀 ISBlog, the Blogging Website created in Next.js, ⚡️ Made with developer experience first: Next.js, React.js, FireBase, Draft.js, VSCode, Vercel.
+🚀 API, the Blogging Website created in Next.js, ⚡️ Made with developer experience first: Next JS 12+, TailwindCSS, MongoDB, and React JS  VSCode, Vercel.
 
 
 ### DEMO
