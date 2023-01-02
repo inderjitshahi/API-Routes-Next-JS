@@ -34,7 +34,7 @@ function Add(props) {
 
     }
     return (
-        <div className='p-5 flex justify-center'>
+        <div className='p-5 flex justify-center font-sans'>
             <form onSubmit={submitHandler} className='border-gray-400 border-2 p-2 flex flex-col space-y-3 rounded-lg w-[70%]'>
                 <label htmlFor='name'>Name</label>
                 <input value={input.name} onChange={changeHandler} className='border-2 rounded-md p-1 border-gray-300' name="name" type="text"></input>

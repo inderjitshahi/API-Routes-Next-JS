@@ -1,0 +1,11 @@
+//.env file getting tracked:
+
+You can remove that file from cached.
+
+try below command
+
+git rm .env --cached
+git commit -m "Any message"
+
+
+// Accessing Mongodb, same Method as in this project, Learn MongoClient,client =MongoClient.connect(), db=client.db("users"); OR db.collection("users");

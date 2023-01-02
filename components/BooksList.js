@@ -3,13 +3,13 @@ import BookItem from './BookItem';
 
 function BooksList(props) {
     const [data, setData] = useState();
-    const sendRequest = () => {
-        fetch("/api/books/")
-        .then(res => res.json())
-        .then(data => setData(data.message))
-        .catch(err => console.log(err));
-    }
     useEffect(() => {
+        const sendRequest = () => {
+            fetch("/api/books/")
+                .then(res => res.json())
+                .then(data => setData(data.message))
+                .catch(err => console.log(err));
+        }
         sendRequest();
     }, []);
     return (

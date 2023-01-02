@@ -23,6 +23,7 @@ export default async function handler(req, res) {
       return res.status(500).json({message:"internal server error"});
     }
     //  const data=getData();
+    client.close();
     return res.status(200).json({ message: books });
   } else if (req.method === "POST") {
     const { name, description, imgURL } = req.body;
@@ -31,13 +32,13 @@ export default async function handler(req, res) {
       name,
       description,
       imgURL,
-
     }
     // data.push(newBook);
     // const filePath=path.join(process.cwd(),"data","books.json");
     // fs.writeFileSync(filePath,JSON.stringify(data));
     // console.log(newBook);
     const result=await db.collection("books").insertOne(newBook);
+    client.close();
     return res.status(201).json({ message: "Added", book: newBook })
   }
 
